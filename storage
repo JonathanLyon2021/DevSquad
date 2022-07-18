@@ -12,4 +12,10 @@ contract storage2 {
         require(_address != address(0), "Cannot be zero address");
         _;
     }
+    
+     function setName(uint256 num, address _address) public {
+        _numberToAddress[num] = _address;
+    }
+    //(uint256,[key]) from line 7 is [num] on line 17. (address,[value] on line 7 is _address on line 17
+    
 }
