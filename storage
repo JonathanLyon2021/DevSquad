@@ -18,4 +18,8 @@ contract storage2 {
     }
     //(uint256,[key]) from line 7 is [num] on line 17. (address,[value] on line 7 is _address on line 17
     
+    function name(uint256 num, address _address) public {
+        setName(num, _address);
+    }
+
 }
