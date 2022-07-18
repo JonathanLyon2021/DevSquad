@@ -1,0 +1,9 @@
+//SPDX-License-Identifier: MIT
+pragma solidity 0.8.0;
+
+
+
+contract storage2 {
+    mapping(uint256 => address) public _numberToAddress;
+    mapping(address => mapping(uint256 => string)) public _addressToOwnerName;
+    uint256 internal number = 100;
