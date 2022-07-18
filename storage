@@ -21,11 +21,16 @@ contract storage2 {
     function name(uint256 num, address _address) public {
         setName(num, _address);
     }
+    
     function setOwner(address _address, uint256 _index, string memory _name) 
     public 
     validAddress(_address)
     {
         _addressToOwnerName[_address][_index] = _name;
+    }
+    
+    function timestamp()public view returns(uint256){
+        return block.timestamp;
     }
 
 }
