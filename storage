@@ -7,3 +7,9 @@ contract storage2 {
     mapping(uint256 => address) public _numberToAddress;
     mapping(address => mapping(uint256 => string)) public _addressToOwnerName;
     uint256 internal number = 100;
+
+    modifier validAddress(address _address) {
+        require(_address != address(0), "Cannot be zero address");
+        _;
+    }
+}
