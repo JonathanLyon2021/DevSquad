@@ -14,3 +14,7 @@ contract Telephone {
       }
     }
   }
+  
+  interface ITelephone{
+     function changeOwner(address _owner) external;
+}
