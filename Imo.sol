@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+interface Imo{
+    function callMeDifferentContract()external returns(address);
+}
     contract Me {
             address public senderOne;
             address public senderTwo;
