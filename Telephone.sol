@@ -18,3 +18,17 @@ contract Telephone {
   interface ITelephone{
      function changeOwner(address _owner) external;
 }
+
+
+contract TelephoneAttack {
+    address telephone;
+
+    constructor(address _telephone) public {
+        telephone = _telephone;
+    }
+}
+
+
+
+
+
