@@ -11,5 +11,9 @@ pragma solidity ^0.8.0;
                     senderTwo = callMeSameContract();
                     senderThree = IMo(moAddress).callMeDifferentContract();
             }
+            
+            function callMeSameContract() public view returns(address){
+                return msg.sender;
+            }
     }
         
