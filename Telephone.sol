@@ -8,4 +8,9 @@ contract Telephone {
   constructor() public {
     owner = msg.sender;
     }
+    function changeOwner(address _owner) public {
+    if (tx.origin != msg.sender) {
+      owner = _owner;
+      }
+    }
   }
